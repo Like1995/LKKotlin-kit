@@ -13,6 +13,8 @@ abstract class Store protected constructor(private val dispatcher: Dispatcher) {
         dispatcher.emitChange(tag, event)
     }
 
+
+    
     // 事件实体接口
     interface StoreChangeEvent
 }
