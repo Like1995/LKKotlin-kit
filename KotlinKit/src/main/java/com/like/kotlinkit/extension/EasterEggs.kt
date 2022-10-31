@@ -1,11 +1,13 @@
 package com.like.kotlinkit.extension
 
+import android.annotation.TargetApi
 import android.app.Application
 import android.content.Context
 import android.content.Intent
 import android.content.pm.ResolveInfo
 import android.graphics.Bitmap
 import android.graphics.Point
+import android.os.Build
 import android.util.TypedValue
 import android.view.*
 import android.widget.Toast
@@ -45,6 +47,7 @@ fun Any.toast(text: Any, lengthLong: Boolean = false) {
  * @param context
  * @return
  */
+@TargetApi(Build.VERSION_CODES.N)
 fun Context.getLaunchers(): HashMap<String, String> {
     val launchers = HashMap<String, String>()
     val intent = Intent(Intent.ACTION_MAIN)
