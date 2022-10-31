@@ -36,9 +36,9 @@ android {
         versionName libraryVersion
     }
 
-//    publishing {
-//        singleVariant("release")
-//    }
+    publishing {
+        singleVariant("release")
+    }
 
 
 //    sourceSets {
